@@ -25,7 +25,6 @@ aux_links:
   "GitHub": https://github.com/kwokel/seohandbook
 aux_links_new_tab: true
 
-footer_content: "© K4Endurance · SEO Handbook"
 
 exclude:
   - README.md
