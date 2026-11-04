@@ -1,8 +1,6 @@
 ---
 title: "Modern Search Ecosystem"
-parent: Foundations
 nav_order: 6
-layout: chapter
 ---
 
 # Ziel des Kapitels

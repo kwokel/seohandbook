@@ -1,8 +1,6 @@
 ---
 title: "Wie Suchmaschinen funktionieren"
-parent: Foundations
 nav_order: 3
-layout: chapter
 ---
 
 # Ziel des Kapitels

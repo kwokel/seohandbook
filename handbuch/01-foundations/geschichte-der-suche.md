@@ -1,8 +1,6 @@
 ---
 title: "Geschichte der Suche"
-parent: Foundations
 nav_order: 2
-layout: chapter
 ---
 
 ## Ziel des Kapitels

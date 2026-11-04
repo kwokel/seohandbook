@@ -1,8 +1,6 @@
 ---
 title: "Search Intent"
-parent: Foundations
 nav_order: 5
-layout: chapter
 ---
 
 ## Ziel des Kapitels

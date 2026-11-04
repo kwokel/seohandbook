@@ -7,12 +7,13 @@ Live: https://kwokel.github.io/seohandbook/
 ## Struktur
 
 - `index.md` – Startseite
-- `foundations/` – Bereich 01 Foundations (`index.md` = Übersicht, sonst eine Datei pro Kapitel)
+- `handbuch/` – ein Ordner pro Bereich (`01-foundations/`, `02-search-engines/` …); die Seite mit `uebersicht: true` ist die Übersichtsseite, alle anderen sind ihre Unterkapitel
+- `_plugins/handbuch.rb` – baut Navigation und URLs automatisch aus der Ordnerstruktur
 - `glossar.md` – Glossar
 - `_layouts/chapter.html` – Kapitel-Layout: setzt Titel und Inhaltsverzeichnis automatisch
 - `.pages.yml` – Konfiguration für [Pages CMS](https://app.pagescms.org)
 
-Inhalte werden über Pages CMS gepflegt. Der Dateiname eines Kapitels bestimmt seine URL (`foundations/search-intent.md` → `/foundations/search-intent/`).
+Inhalte werden über Pages CMS gepflegt. Der Dateiname eines Kapitels bestimmt seine URL (`handbuch/01-foundations/search-intent.md` → `/foundations/search-intent/`).
 
 ## Lokal ansehen
 

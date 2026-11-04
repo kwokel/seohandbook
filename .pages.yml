@@ -27,14 +27,14 @@ content:
         options:
           format: markdown
 
-  - name: foundations
-    label: 01 Foundations
+  - name: handbuch
+    label: Handbuch
     type: collection
-    path: foundations
+    path: handbuch
+    subfolders: true
     filename: "{primary}.md"
-    exclude: [index.md]
     view:
-      fields: [title, nav_order]
+      fields: [title, nav_order, uebersicht]
       primary: title
       sort: [nav_order, title]
       default:
@@ -46,45 +46,19 @@ content:
         type: string
         required: true
       - name: nav_order
-        label: Position in der Navigation
-        description: Reihenfolge innerhalb von Foundations (1, 2, 3 …)
+        label: Position
+        description: "Reihenfolge der Unterkapitel im Bereich (1, 2, 3 …). Übersichtsseite: 0"
         type: number
         required: true
-      - name: parent
-        type: string
-        hidden: true
-        default: Foundations
-      - name: layout
-        type: string
-        hidden: true
-        default: chapter
-      - name: body
-        label: Inhalt
-        description: "Titel und Inhaltsverzeichnis werden automatisch erzeugt. Glossar-Links: ../../glossar/#a – Links auf andere Kapitel: ../kapitelname/"
-        type: rich-text
-        options:
-          format: markdown
-          switcher: true
-
-  - name: foundations_overview
-    label: 01 Foundations – Übersichtsseite
-    type: file
-    path: foundations/index.md
-    fields:
-      - name: title
-        type: string
-        hidden: true
-        default: Foundations
-      - name: nav_order
-        type: number
-        hidden: true
         default: 1
-      - name: has_children
+      - name: uebersicht
+        label: Übersichtsseite des Bereichs
+        description: Nur bei genau einer Seite pro Ordner anhaken – alle anderen Seiten im Ordner werden automatisch ihre Unterkapitel.
         type: boolean
-        hidden: true
-        default: true
+        default: false
       - name: body
         label: Inhalt
+        description: "Titel und Inhaltsverzeichnis werden automatisch erzeugt. Glossar-Links: ../../glossar/#a – Links auf andere Kapitel im selben Bereich: ../kapitelname/"
         type: rich-text
         options:
           format: markdown

@@ -1,8 +1,6 @@
 ---
 title: "Ranking-Systeme"
-parent: Foundations
 nav_order: 4
-layout: chapter
 ---
 
 # Ziel des Kapitels

@@ -1,8 +1,6 @@
 ---
 title: "KPIs & Business Metrics"
-parent: Foundations
 nav_order: 8
-layout: chapter
 ---
 
 ## Ziel des Kapitels

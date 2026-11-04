@@ -1,8 +1,6 @@
 ---
 title: "Grundlagen AI Search"
-parent: Foundations
 nav_order: 7
-layout: chapter
 ---
 
 # Ziel des Kapitels

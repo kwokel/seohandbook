@@ -1,8 +1,6 @@
 ---
 title: "Was ist SEO?"
-parent: Foundations
 nav_order: 1
-layout: chapter
 ---
 
 ## Ziel des Kapitels
