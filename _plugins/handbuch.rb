@@ -1,11 +1,13 @@
 # Baut die Navigation des Handbuchs automatisch aus der Ordnerstruktur:
 #
-#   handbuch/01-foundations/foundations.md   (uebersicht: true)  ->  /foundations/
-#   handbuch/01-foundations/search-intent.md                     ->  /foundations/search-intent/
+#   handbuch/Foundations/foundations.md    (uebersicht: true)  ->  /foundations/
+#   handbuch/Foundations/search-intent.md                     ->  /foundations/search-intent/
 #
-# - Die Nummer im Ordnernamen bestimmt die Reihenfolge der Bereiche.
+# - Der Ordnername ergibt die URL des Bereichs ("Technical SEO" -> /technical-seo/).
 # - Die Seite mit "uebersicht: true" ist die Übersichtsseite des Bereichs;
 #   alle anderen Seiten im Ordner werden automatisch ihre Unterkapitel.
+# - "bereich_position" der Übersichtsseite bestimmt die Reihenfolge der Bereiche
+#   (alternativ eine Nummer vor dem Ordnernamen, z. B. "02-search-engines").
 Jekyll::Hooks.register :site, :post_read do |site|
   site.pages
       .select { |p| p.relative_path.start_with?("handbuch/") }
@@ -14,7 +16,7 @@ Jekyll::Hooks.register :site, :post_read do |site|
     next if dir.empty? || dir.include?("/")
 
     number = dir[/\A(\d+)/, 1]
-    area   = dir.sub(/\A\d+[-_ ]*/, "")
+    area   = Jekyll::Utils.slugify(dir.sub(/\A\d+[-_ ]*/, ""))
     overview = pages.find { |p| p.data["uebersicht"] } || pages.find { |p| p.name == "index.md" }
 
     pages.each do |p|
@@ -22,7 +24,8 @@ Jekyll::Hooks.register :site, :post_read do |site|
       if p.equal?(overview)
         p.data["has_children"] = pages.size > 1
         p.data["has_toc"]      = false # Kapitelliste kommt aus _layouts/chapter.html
-        p.data["nav_order"]    = number.to_i if number
+        position = p.data["bereich_position"] || number
+        p.data["nav_order"]    = position.to_i if position
         p.data.delete("parent")
         p.data["permalink"]    = "/#{area}/" unless p.data["permalink"]
       else

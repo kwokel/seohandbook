@@ -56,6 +56,10 @@ content:
         description: Nur bei genau einer Seite pro Ordner anhaken – alle anderen Seiten im Ordner werden automatisch ihre Unterkapitel.
         type: boolean
         default: false
+      - name: bereich_position
+        label: Position des Bereichs
+        description: "Nur bei der Übersichtsseite: Reihenfolge der Bereiche in der Navigation (Foundations = 1, Search Engines = 2 …)"
+        type: number
       - name: body
         label: Inhalt
         description: "Titel und Inhaltsverzeichnis werden automatisch erzeugt. Glossar-Links: ../../glossar/#a – Links auf andere Kapitel im selben Bereich: ../kapitelname/"
