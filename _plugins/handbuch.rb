@@ -18,7 +18,7 @@ Jekyll::Hooks.register :site, :post_read do |site|
     overview = pages.find { |p| p.data["uebersicht"] } || pages.find { |p| p.name == "index.md" }
 
     pages.each do |p|
-      p.data["layout"] = "chapter" unless p.data["layout"]
+      p.data["layout"] = "chapter" if [nil, "default"].include?(p.data["layout"])
       if p.equal?(overview)
         p.data["has_children"] = pages.size > 1
         p.data["nav_order"]    = number.to_i if number
