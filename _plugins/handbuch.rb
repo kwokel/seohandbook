@@ -1,36 +1,38 @@
-# Baut die Navigation des Handbuchs automatisch aus der Ordnerstruktur:
+# Baut die Navigation des Handbuchs automatisch aus der Ordnerstruktur
+# (passend zur Baumansicht in Pages CMS):
 #
-#   handbuch/Foundations/foundations.md    (uebersicht: true)  ->  /foundations/
-#   handbuch/Foundations/search-intent.md                     ->  /foundations/search-intent/
+#   handbuch/Foundations/index.md          ->  Bereich "Foundations"      /foundations/
+#   handbuch/Foundations/search-intent.md  ->  Unterkapitel davon         /foundations/search-intent/
+#   handbuch/neuer-bereich.md              ->  Bereich ohne Unterkapitel  /neuer-bereich/
 #
-# - Der Ordnername ergibt die URL des Bereichs ("Technical SEO" -> /technical-seo/).
-# - Die Seite mit "uebersicht: true" ist die Übersichtsseite des Bereichs;
-#   alle anderen Seiten im Ordner werden automatisch ihre Unterkapitel.
-# - "bereich_position" der Übersichtsseite bestimmt die Reihenfolge der Bereiche
-#   (alternativ eine Nummer vor dem Ordnernamen, z. B. "02-search-engines").
+# "nav_order" einer index.md bestimmt die Reihenfolge der Bereiche,
+# "nav_order" aller anderen Seiten die Reihenfolge der Unterkapitel im Bereich.
 Jekyll::Hooks.register :site, :post_read do |site|
-  site.pages
-      .select { |p| p.relative_path.start_with?("handbuch/") }
-      .group_by { |p| File.dirname(p.relative_path).sub(%r{\Ahandbuch/?}, "") }
-      .each do |dir, pages|
-    next if dir.empty? || dir.include?("/")
+  pages = site.pages.select { |p| p.relative_path.start_with?("handbuch/") }
 
-    number = dir[/\A(\d+)/, 1]
-    area   = Jekyll::Utils.slugify(dir.sub(/\A\d+[-_ ]*/, ""))
-    overview = pages.find { |p| p.data["uebersicht"] } || pages.find { |p| p.name == "index.md" }
+  pages.each do |p|
+    p.data["layout"] = "chapter" if [nil, "default"].include?(p.data["layout"])
+  end
 
-    pages.each do |p|
-      p.data["layout"] = "chapter" if [nil, "default"].include?(p.data["layout"])
+  pages.group_by { |p| File.dirname(p.relative_path).sub(%r{\Ahandbuch/?}, "") }.each do |dir, group|
+    if dir.empty?
+      # Bereich ohne Unterkapitel (direkt im Ordner "handbuch")
+      group.each { |p| p.data["permalink"] ||= "/#{Jekyll::Utils.slugify(p.basename)}/" }
+      next
+    end
+    next if dir.include?("/")
+
+    area     = Jekyll::Utils.slugify(dir)
+    overview = group.find { |p| p.name == "index.md" }
+
+    group.each do |p|
       if p.equal?(overview)
-        p.data["has_children"] = pages.size > 1
+        p.data["has_children"] = group.size > 1
         p.data["has_toc"]      = false # Kapitelliste kommt aus _layouts/chapter.html
-        position = p.data["bereich_position"] || number
-        p.data["nav_order"]    = position.to_i if position
-        p.data.delete("parent")
-        p.data["permalink"]    = "/#{area}/" unless p.data["permalink"]
+        p.data["permalink"]  ||= "/#{area}/"
       else
-        p.data["parent"]    = overview.data["title"] if overview
-        p.data["permalink"] = "/#{area}/#{p.basename}/" unless p.data["permalink"]
+        p.data["parent"]      = overview.data["title"] if overview
+        p.data["permalink"] ||= "/#{area}/#{p.basename}/"
       end
     end
   end

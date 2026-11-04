@@ -12,7 +12,7 @@ layout: default
 {{ content }}
 </div>
 
-{% if page.uebersicht %}
+{% if page.has_children %}
   {% assign kapitel = site.html_pages | where: "parent", page.title | sort: "nav_order" %}
   {% if kapitel.size > 0 %}
 <hr>

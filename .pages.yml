@@ -34,7 +34,11 @@ content:
     subfolders: true
     filename: "{primary}.md"
     view:
-      fields: [title, nav_order, uebersicht]
+      layout: tree
+      node:
+        filename: index.md
+        hideDirs: nodes
+      fields: [title, nav_order]
       primary: title
       sort: [nav_order, title]
       default:
@@ -47,19 +51,10 @@ content:
         required: true
       - name: nav_order
         label: Position
-        description: "Reihenfolge der Unterkapitel im Bereich (1, 2, 3 …). Übersichtsseite: 0"
+        description: "Bei einem Bereich (oberste Ebene): Reihenfolge der Bereiche. Bei einem Unterkapitel: Reihenfolge innerhalb des Bereichs."
         type: number
         required: true
         default: 1
-      - name: uebersicht
-        label: Übersichtsseite des Bereichs
-        description: Nur bei genau einer Seite pro Ordner anhaken – alle anderen Seiten im Ordner werden automatisch ihre Unterkapitel.
-        type: boolean
-        default: false
-      - name: bereich_position
-        label: Position des Bereichs
-        description: "Nur bei der Übersichtsseite: Reihenfolge der Bereiche in der Navigation (Foundations = 1, Search Engines = 2 …)"
-        type: number
       - name: body
         label: Inhalt
         description: "Titel und Inhaltsverzeichnis werden automatisch erzeugt. Glossar-Links: ../../glossar/#a – Links auf andere Kapitel im selben Bereich: ../kapitelname/"

@@ -1,8 +1,6 @@
 ---
 title: Foundations
-nav_order: 0
-bereich_position: 1
-uebersicht: true
+nav_order: 1
 ---
 
 Die Grundlagen, auf denen alle weiteren Bereiche aufbauen: was SEO eigentlich ist, wie Suchmaschinen Inhalte finden, verstehen und bewerten, welche Rolle Search Intent spielt, wie sich das Suchökosystem durch AI Search verändert und wie du SEO-Erfolg geschäftlich sinnvoll misst.

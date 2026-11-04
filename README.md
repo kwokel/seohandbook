@@ -7,7 +7,7 @@ Live: https://kwokel.github.io/seohandbook/
 ## Struktur
 
 - `index.md` – Startseite
-- `handbuch/` – ein Ordner pro Bereich (`Foundations/`, `Search Engines/` …); die Seite mit `uebersicht: true` ist die Übersichtsseite, alle anderen sind ihre Unterkapitel
+- `handbuch/` – ein Ordner pro Bereich (`Foundations/` …); `index.md` ist die Übersichtsseite des Bereichs, alle anderen Dateien sind seine Unterkapitel
 - `_plugins/handbuch.rb` – baut Navigation und URLs automatisch aus der Ordnerstruktur
 - `glossar.md` – Glossar
 - `_layouts/chapter.html` – Kapitel-Layout: setzt Titel und Inhaltsverzeichnis automatisch
