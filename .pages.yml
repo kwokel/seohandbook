@@ -1,0 +1,116 @@
+# Konfiguration für Pages CMS (https://pagescms.org)
+media:
+  input: assets/images
+  output: /seohandbook/assets/images
+
+content:
+  - name: start
+    label: Startseite
+    type: file
+    path: index.md
+    fields:
+      - name: title
+        label: Titel
+        type: string
+      - name: layout
+        type: string
+        hidden: true
+        default: home
+      - name: nav_order
+        type: number
+        hidden: true
+        default: 0
+      - name: body
+        label: Inhalt
+        description: Enthält Buttons und Links im Jekyll-Format – deshalb als Markdown-Quelltext.
+        type: code
+        options:
+          format: markdown
+
+  - name: foundations
+    label: 01 Foundations
+    type: collection
+    path: foundations
+    filename: "{primary}.md"
+    exclude: [index.md]
+    view:
+      fields: [title, nav_order]
+      primary: title
+      sort: [nav_order, title]
+      default:
+        sort: nav_order
+        order: asc
+    fields:
+      - name: title
+        label: Titel
+        type: string
+        required: true
+      - name: nav_order
+        label: Position in der Navigation
+        description: Reihenfolge innerhalb von Foundations (1, 2, 3 …)
+        type: number
+        required: true
+      - name: parent
+        type: string
+        hidden: true
+        default: Foundations
+      - name: layout
+        type: string
+        hidden: true
+        default: chapter
+      - name: body
+        label: Inhalt
+        description: "Titel und Inhaltsverzeichnis werden automatisch erzeugt. Glossar-Links: ../../glossar/#a – Links auf andere Kapitel: ../kapitelname/"
+        type: rich-text
+        options:
+          format: markdown
+          switcher: true
+
+  - name: foundations_overview
+    label: 01 Foundations – Übersichtsseite
+    type: file
+    path: foundations/index.md
+    fields:
+      - name: title
+        type: string
+        hidden: true
+        default: Foundations
+      - name: nav_order
+        type: number
+        hidden: true
+        default: 1
+      - name: has_children
+        type: boolean
+        hidden: true
+        default: true
+      - name: body
+        label: Inhalt
+        type: rich-text
+        options:
+          format: markdown
+          switcher: true
+
+  - name: glossar
+    label: Glossar
+    type: file
+    path: glossar.md
+    fields:
+      - name: title
+        type: string
+        hidden: true
+        default: Glossar
+      - name: nav_order
+        type: number
+        hidden: true
+        default: 12
+      - name: layout
+        type: string
+        hidden: true
+        default: chapter
+      - name: body
+        label: Inhalt
+        description: "Buchstaben als Überschrift 2 (## A), Begriffe als Liste."
+        type: rich-text
+        options:
+          format: markdown
+          switcher: true

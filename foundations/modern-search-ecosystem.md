@@ -2,18 +2,8 @@
 title: "Modern Search Ecosystem"
 parent: Foundations
 nav_order: 6
-permalink: /foundations/modern-search-ecosystem/
+layout: chapter
 ---
-
-# Modern Search Ecosystem
-{: .no_toc }
-
-<details open markdown="block">
-<summary>Inhalt</summary>
-{: .text-delta }
-- TOC
-{:toc}
-</details>
 
 # Ziel des Kapitels
 Dieses Kapitel vermittelt ein tiefgreifendes Verständnis der aktuellen und zukünftigen Suchlandschaft. Das moderne Search Ecosystem ist nicht länger auf "10 blaue Links" (die klassische SERP) limitiert, sondern stellt ein hochkomplexes, KI-gesteuertes Geflecht verschiedener Plattformen, Touchpoints und Intent-getriebener Oberflächen dar. Ziel ist es, die Architektur dieser fragmentierten Landschaft zu verstehen, um ganzheitliche, zukunftssichere SEO-Strategien zu entwickeln, die über klassisches Web Search hinausgehen und die Marke dort positionieren, wo die Zielgruppe tatsächliche Informationsbedürfnisse hat.
@@ -24,10 +14,10 @@ Das moderne Search Ecosystem bezeichnet die Gesamtheit aller digitalen Berührun
 Nutzer suchen heute produktbezogen direkt auf Amazon, inspirativ auf Pinterest, lokal auf Google Maps, per Video auf YouTube oder TikTok und konversationell über Large Language Models (LLMs) wie ChatGPT, Claude oder Google Gemini. Die ehemals klaren Grenzen zwischen Search Engine, Social Network, E-Commerce-Plattform und AI Assistant verschwimmen zunehmend. 
 
 Folgende First Principles gelten im modernen Ökosystem:
-* **[Information Retrieval]({{ '/glossar/' | relative_url }}#i) follows Intent, not Platforms:** Nutzer wählen die Plattform, die ihren spezifischen Suchintent im jeweiligen Kontext am effizientesten bedient.
+* **[Information Retrieval](../../glossar/#i) follows Intent, not Platforms:** Nutzer wählen die Plattform, die ihren spezifischen Suchintent im jeweiligen Kontext am effizientesten bedient.
 * **Fragmentierung der Customer Journey:** Die Reise des Nutzers ist nicht-linear. Die Präsenz einer Marke muss an allen relevanten Touchpoints stattfinden.
 * **Format-Agnostik:** Inhalte müssen so strukturiert sein, dass sie von unterschiedlichen Engines (text-basierten Crawlern, Video-Algorithmen, AI-Agenten) maschinenlesbar erfasst und adaptiert werden können.
-* **Entity First:** Die klare Identifikation einer Marke oder Person als verifizierte und vertrauenswürdige [Entität]({{ '/glossar/' | relative_url }}#e) im Web ist die Grundvoraussetzung für Sichtbarkeit im gesamten Ökosystem.
+* **Entity First:** Die klare Identifikation einer Marke oder Person als verifizierte und vertrauenswürdige [Entität](../../glossar/#e) im Web ist die Grundvoraussetzung für Sichtbarkeit im gesamten Ökosystem.
 
 # Hauptinhalt
 
@@ -35,9 +25,9 @@ Folgende First Principles gelten im modernen Ökosystem:
 ### 1. Die Fragmentierung der Suche
 Das Suchverhalten hat sich hochgradig spezialisiert. Wir unterscheiden primär folgende Säulen:
 * **Classic Web Search (Google, Bing):** Die universelle Informationssuche, die zunehmend durch AI Overviews augmentiert wird.
-* **[Vertical Search]({{ '/glossar/' | relative_url }}#v) (Amazon, Pinterest, G2):** Branchenspezifische Suchen mit extrem spitzem Intent.
+* **[Vertical Search](../../glossar/#v) (Amazon, Pinterest, G2):** Branchenspezifische Suchen mit extrem spitzem Intent.
 * **Social Search (TikTok, YouTube, Reddit):** Die Suche nach authentischen Erfahrungen und Expertenmeinungen ("perspektivengetriebene Suche").
-* **AI & Conversational Search (ChatGPT, Perplexity):** Synthetisierte Antworten, komplexe Recherchen und dynamische Konversationen ([Answer Engine Optimization - AEO]({{ '/glossar/' | relative_url }}#a)).
+* **AI & Conversational Search (ChatGPT, Perplexity):** Synthetisierte Antworten, komplexe Recherchen und dynamische Konversationen ([Answer Engine Optimization - AEO](../../glossar/#a)).
 
 ### 2. Multi-Surface Optimierung (Das Google Ecosystem)
 Selbst Google allein ist ein Ökosystem aus verschiedenen Oberflächen (Surfaces):
@@ -48,14 +38,14 @@ Selbst Google allein ist ein Ökosystem aus verschiedenen Oberflächen (Surfaces
 
 ### 3. Wie Suchmaschinen (Google) das Ökosystem steuern
 Google hat das fundamentale Ziel, die Reibung zwischen Frage und Antwort zu minimieren. 
-* **Ökosystem-Dominanz:** Google möchte die Nutzer so lange wie möglich im eigenen Ökosystem halten ([Zero-Click Searches]({{ '/glossar/' | relative_url }}#z)). 
+* **Ökosystem-Dominanz:** Google möchte die Nutzer so lange wie möglich im eigenen Ökosystem halten ([Zero-Click Searches](../../glossar/#z)). 
 * **Perspectives & Authenticity (Hidden Gems):** Google reagiert auf die Bedrohung durch TikTok und Reddit. Echte menschliche Erfahrungen (UGC) werden massiv aufgewertet.
-* **Entitätenbasierte Vernetzung:** Die Suchmaschine versteht das Web zunehmend als "Graph der Entitäten" ([Knowledge Graph]({{ '/glossar/' | relative_url }}#k)). Die konsistente Vernetzung von Autorenschaft, Marke und Themenrelevanz bildet das Fundament für algorithmisches Vertrauen.
+* **Entitätenbasierte Vernetzung:** Die Suchmaschine versteht das Web zunehmend als "Graph der Entitäten" ([Knowledge Graph](../../glossar/#k)). Die konsistente Vernetzung von Autorenschaft, Marke und Themenrelevanz bildet das Fundament für algorithmisches Vertrauen.
 
 ## Best Practices
 * **Omnichannel Audience Mapping:** Analysieren Sie die Zielgruppe nach Plattform-Präferenzen in den verschiedenen Phasen der Customer Journey (Wo informiert sich die Zielgruppe initial? Wo werden Vergleiche gezogen?).
 * **Format-Diversifizierung (Content Atomization):** Erstellen Sie Content nicht eindimensional. Ein starker Core-Content sollte in strukturierte Daten, Short-Form-Videos, Podcasts, Info-Grafiken und Social-Threads dekonstruiert werden.
-* **[E-E-A-T]({{ '/glossar/' | relative_url }}#e) als Ecosystem-Signal etablieren:** Aktive Präsenz auf Fremdplattformen, Erwähnungen durch Branchenexperten und aktive Teilnahme in relevanten Foren (z.B. Reddit) sind entscheidende Trust-Signale.
+* **[E-E-A-T](../../glossar/#e) als Ecosystem-Signal etablieren:** Aktive Präsenz auf Fremdplattformen, Erwähnungen durch Branchenexperten und aktive Teilnahme in relevanten Foren (z.B. Reddit) sind entscheidende Trust-Signale.
 * **Markenaufbau (Brand Search Volume):** Investieren Sie in Brand Awareness. Eine Marke mit hohem direkten Suchvolumen und klaren Entitäts-Grenzen wird von LLMs häufiger zitiert ("Entitäts-Bonus").
 * **Maschinenlesbare Informationsarchitektur:** Strukturieren Sie Daten semantisch einwandfrei (Schema.org), damit Bots und AI-Agenten die Inhalte effizient extrahieren können.
 
@@ -93,7 +83,7 @@ Google hat das fundamentale Ziel, die Reibung zwischen Frage und Antwort zu mini
 - [ ] Wird Brand-Traffic als KPI für den Erfolg im Ökosystem herangezogen und gemonitort?
 
 ## KPIs
-* **[Share of Voice (SoV)]({{ '/glossar/' | relative_url }}#s):** Sichtbarkeit der Marke aggregiert über relevante Ecosystem-Kanäle.
+* **[Share of Voice (SoV)](../../glossar/#s):** Sichtbarkeit der Marke aggregiert über relevante Ecosystem-Kanäle.
 * **Brand Mentions & Co-Occurrences:** Volumen und qualitativer Kontext unlinked Mentions im Web.
 * **Direct Traffic & Brand Search Volume:** Indikator für den Vertrauensaufbau und die Stärke der Brand im Ökosystem.
 * **Cross-Surface Impressions:** Impressionen aus Google Discover, Google News, Images und YouTube.
@@ -125,8 +115,8 @@ Das moderne Search Ecosystem ist stark fragmentiert, multi-formatig und Intent-g
 * [**Google Search Central Blog**](https://developers.google.com/search/blog): Offizielle Updates zur Integration neuer Surfaces, Perspectives und AI Overviews in das Sucherlebnis.
 * [**Aleyda Solis**](https://www.aleydasolis.com/en/blog/): Frameworks und Strategien zur Modern SEO & AI Search Integration.
 * [**Kevin Indig (Growth Memo)**](https://www.kevin-indig.com/): Analysen zur Evolution des Such-Ökosystems und den Auswirkungen maschinellen Lernens.
-* [Kapitel 01.03 Wie Suchmaschinen funktionieren]({{ '/foundations/wie-suchmaschinen-funktionieren/' | relative_url }})
-* [Kapitel 01.05 Search Intent]({{ '/foundations/search-intent/' | relative_url }})
+* [Kapitel 01.03 Wie Suchmaschinen funktionieren](../wie-suchmaschinen-funktionieren/)
+* [Kapitel 01.05 Search Intent](../search-intent/)
 * Kapitel 04.02 Informationsarchitektur
 * Kapitel 06.01 Authority Foundations
-* [Kapitel 07.01 Grundlagen AI Search]({{ '/foundations/grundlagen-ai-search/' | relative_url }})
+* [Kapitel 07.01 Grundlagen AI Search](../grundlagen-ai-search/)

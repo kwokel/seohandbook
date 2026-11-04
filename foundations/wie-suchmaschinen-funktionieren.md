@@ -2,18 +2,8 @@
 title: "Wie Suchmaschinen funktionieren"
 parent: Foundations
 nav_order: 3
-permalink: /foundations/wie-suchmaschinen-funktionieren/
+layout: chapter
 ---
-
-# Wie Suchmaschinen funktionieren
-{: .no_toc }
-
-<details open markdown="block">
-<summary>Inhalt</summary>
-{: .text-delta }
-- TOC
-{:toc}
-</details>
 
 # Ziel des Kapitels
 Dieses Kapitel vermittelt ein grundlegendes Verständnis darüber, wie moderne Suchmaschinen Informationen erfassen, verarbeiten und für Suchanfragen bereitstellen. Wer versteht, welche Schritte zwischen der Veröffentlichung einer Webseite und ihrer Anzeige in den Suchergebnissen liegen, kann SEO-Maßnahmen gezielter einordnen und priorisieren.

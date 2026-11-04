@@ -7,10 +7,12 @@ Live: https://kwokel.github.io/seohandbook/
 ## Struktur
 
 - `index.md` – Startseite
-- `docs/foundations/` – Bereich 01 Foundations (eine Datei pro Kapitel)
-- `docs/glossar.md` – Glossar
+- `foundations/` – Bereich 01 Foundations (`index.md` = Übersicht, sonst eine Datei pro Kapitel)
+- `glossar.md` – Glossar
+- `_layouts/chapter.html` – Kapitel-Layout: setzt Titel und Inhaltsverzeichnis automatisch
+- `.pages.yml` – Konfiguration für [Pages CMS](https://app.pagescms.org)
 
-Neue Kapitel brauchen im Front Matter `title`, `parent` (Name des Bereichs), `nav_order` und `permalink`.
+Inhalte werden über Pages CMS gepflegt. Der Dateiname eines Kapitels bestimmt seine URL (`foundations/search-intent.md` → `/foundations/search-intent/`).
 
 ## Lokal ansehen
 

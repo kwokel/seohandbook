@@ -2,26 +2,16 @@
 title: "KPIs & Business Metrics"
 parent: Foundations
 nav_order: 8
-permalink: /foundations/kpis-und-business-metrics/
+layout: chapter
 ---
 
-# KPIs & Business Metrics
-{: .no_toc }
-
-<details open markdown="block">
-<summary>Inhalt</summary>
-{: .text-delta }
-- TOC
-{:toc}
-</details>
-
 ## Ziel des Kapitels
-Dieses Kapitel schlägt die Brücke zwischen isolierten SEO-Metriken und unternehmerischer Wertschöpfung. Senior SEOs lernen, wie sie organischen Traffic nicht nur als Selbstzweck betrachten, sondern den tatsächlichen [Return on Investment (ROI)]({{ '/glossar/' | relative_url }}#r) ihrer Maßnahmen messbar machen. Ziel ist es, SEO von einem "Traffic-Lieferanten" zu einem strategischen Business-Treiber zu transformieren und das Reporting so auszurichten, dass es C-Level-Entscheidungen fundiert unterstützt.
+Dieses Kapitel schlägt die Brücke zwischen isolierten SEO-Metriken und unternehmerischer Wertschöpfung. Senior SEOs lernen, wie sie organischen Traffic nicht nur als Selbstzweck betrachten, sondern den tatsächlichen [Return on Investment (ROI)](../../glossar/#r) ihrer Maßnahmen messbar machen. Ziel ist es, SEO von einem "Traffic-Lieferanten" zu einem strategischen Business-Treiber zu transformieren und das Reporting so auszurichten, dass es C-Level-Entscheidungen fundiert unterstützt.
 
 ## Grundlagen
 Key Performance Indicators (KPIs) sind quantifizierbare Kennzahlen, mit denen der Fortschritt oder Erfüllungsgrad hinsichtlich wichtiger Zielsetzungen innerhalb eines Unternehmens gemessen wird. In der SEO-Branche herrscht oft ein Missverständnis bezüglich der Auswahl dieser Kennzahlen. 
 
-Zu häufig werden sogenannte **[Vanity Metrics]({{ '/glossar/' | relative_url }}#v)** (Eitelkeitsmetriken wie reine Rankings, isolierte Sichtbarkeitsindizes oder ungefilterter Traffic) in den Vordergrund gestellt. Diese Metriken sehen in Präsentationen zwar gut aus, haben aber keinen direkten, belegbaren Einfluss auf den Geschäftserfolg. Reale Business Metrics hingegen sind hart an den Umsatz, die Lead-Generierung, die Profitabilität und die Kundenbindung gekoppelt. Ein professionelles SEO-Framework erfordert die klare Trennung von Metriken zur operativen Diagnose und Metriken zur strategischen Erfolgsbewertung.
+Zu häufig werden sogenannte **[Vanity Metrics](../../glossar/#v)** (Eitelkeitsmetriken wie reine Rankings, isolierte Sichtbarkeitsindizes oder ungefilterter Traffic) in den Vordergrund gestellt. Diese Metriken sehen in Präsentationen zwar gut aus, haben aber keinen direkten, belegbaren Einfluss auf den Geschäftserfolg. Reale Business Metrics hingegen sind hart an den Umsatz, die Lead-Generierung, die Profitabilität und die Kundenbindung gekoppelt. Ein professionelles SEO-Framework erfordert die klare Trennung von Metriken zur operativen Diagnose und Metriken zur strategischen Erfolgsbewertung.
 
 ## First Principles
 * **SEO ist ein Investment, kein Cost Center:** Jede Maßnahme muss sich langfristig durch positiven ROI rechtfertigen. Suchmaschinenoptimierung baut dauerhafte Assets (Content, Autorität, technische Exzellenz) auf, die Zinseszinsen generieren.
@@ -35,10 +25,10 @@ Zu häufig werden sogenannte **[Vanity Metrics]({{ '/glossar/' | relative_url }}
 
 #### 1. Leading vs. Lagging Indicators
 Ein tiefgreifendes Verständnis der Ursache-Wirkungs-Kette ist für das strategische SEO-Reporting essenziell. 
-* **[Leading Indicators]({{ '/glossar/' | relative_url }}#l) (Frühindikatoren):** Diese Metriken zeigen an, ob die operativen Maßnahmen greifen, bevor sich der geschäftliche finale Erfolg einstellt. Sie sind prognostisch und helfen bei der täglichen Optimierung.
+* **[Leading Indicators](../../glossar/#l) (Frühindikatoren):** Diese Metriken zeigen an, ob die operativen Maßnahmen greifen, bevor sich der geschäftliche finale Erfolg einstellt. Sie sind prognostisch und helfen bei der täglichen Optimierung.
   * *Beispiele:* Crawl-Budget-Auslastung, Indexierungs-Status, Core Web Vitals, Sichtbarkeitsindex (z.B. von Sistrix), Impressionen in der Google Search Console (GSC), durchschnittliche Ranking-Positionen.
-* **[Lagging Indicators]({{ '/glossar/' | relative_url }}#l) (Spätindikatoren):** Diese Metriken messen den finalen Geschäftserfolg. Sie sind retrospektiv und zeigen das Resultat der vergangenen Bemühungen, oft mit einem Delay von Wochen oder Monaten nach der eigentlichen Maßnahme.
-  * *Beispiele:* Organischer Umsatz, Marketing Qualified Leads (MQLs), Sales Qualified Leads (SQLs), [Customer Acquisition Cost (CAC)]({{ '/glossar/' | relative_url }}#c), Return on Investment (ROI), [Customer Lifetime Value (CLTV)]({{ '/glossar/' | relative_url }}#c).
+* **[Lagging Indicators](../../glossar/#l) (Spätindikatoren):** Diese Metriken messen den finalen Geschäftserfolg. Sie sind retrospektiv und zeigen das Resultat der vergangenen Bemühungen, oft mit einem Delay von Wochen oder Monaten nach der eigentlichen Maßnahme.
+  * *Beispiele:* Organischer Umsatz, Marketing Qualified Leads (MQLs), Sales Qualified Leads (SQLs), [Customer Acquisition Cost (CAC)](../../glossar/#c), Return on Investment (ROI), [Customer Lifetime Value (CLTV)](../../glossar/#c).
 
 #### 2. Das Pyramiden-Reporting (Stakeholder-Alignment)
 Verschiedene Stakeholder benötigen fundamental unterschiedliche Flughöhen der Daten. Ein fataler Fehler vieler SEOs ist es, dem CEO einen Bericht über Canonical-Fehler vorzulegen.
@@ -50,7 +40,7 @@ Verschiedene Stakeholder benötigen fundamental unterschiedliche Flughöhen der 
 SEO ist in komplexen Customer Journeys (insbesondere im B2B-Bereich) selten der erste und letzte Touchpoint. Die Messung des wahren Werts von SEO erfordert daher fortgeschrittene Attributionsmodelle.
 * **First-Click Attribution:** Wertet SEO als Türöffner (Awareness/ToFu). Sehr wertvoll, um den Impact von informativen Ratgeber-Inhalten zu beweisen.
 * **Last-Click Attribution:** Das historisch am meisten genutzte Modell. Es wertet den SEO-Kanal oft massiv ab, da Nutzer nach der initialen Recherche häufig über Branded Search, Direct Traffic oder Retargeting-Ads zurückkehren und konvertieren.
-* **[Data-driven Attribution (DDA)]({{ '/glossar/' | relative_url }}#d):** Verteilt den Wert dynamisch über alle Touchpoints basierend auf maschinellem Lernen. In komplexen Journeys ist DDA zwingend notwendig, um den wahren Anteil von SEO an der Wertschöpfungskette zu belegen.
+* **[Data-driven Attribution (DDA)](../../glossar/#d):** Verteilt den Wert dynamisch über alle Touchpoints basierend auf maschinellem Lernen. In komplexen Journeys ist DDA zwingend notwendig, um den wahren Anteil von SEO an der Wertschöpfungskette zu belegen.
 
 ### Wie Google denkt
 Google optimiert kontinuierlich auf maximale Nutzerzufriedenheit (und letztlich auf die langfristige Maximierung des eigenen Werbeumsatzes). Aus Sicht der Suchmaschine ist "Erfolg" definiert durch schnelle Task Completion: Der Nutzer findet sofort, was er sucht, und muss nicht zur Suchmaschine zurückkehren.

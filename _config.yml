@@ -4,6 +4,7 @@ theme: just-the-docs
 lang: de
 
 url: https://kwokel.github.io
+permalink: pretty
 
 # Navigation & Suche
 search_enabled: true
@@ -32,6 +33,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - .pages.yml
 
 defaults:
   - scope:

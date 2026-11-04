@@ -2,18 +2,8 @@
 title: "Search Intent"
 parent: Foundations
 nav_order: 5
-permalink: /foundations/search-intent/
+layout: chapter
 ---
-
-# Search Intent
-{: .no_toc }
-
-<details open markdown="block">
-<summary>Inhalt</summary>
-{: .text-delta }
-- TOC
-{:toc}
-</details>
 
 ## Ziel des Kapitels
 

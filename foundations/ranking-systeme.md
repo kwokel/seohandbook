@@ -2,18 +2,8 @@
 title: "Ranking-Systeme"
 parent: Foundations
 nav_order: 4
-permalink: /foundations/ranking-systeme/
+layout: chapter
 ---
-
-# Ranking-Systeme
-{: .no_toc }
-
-<details open markdown="block">
-<summary>Inhalt</summary>
-{: .text-delta }
-- TOC
-{:toc}
-</details>
 
 # Ziel des Kapitels
 Ranking-Systeme bestimmen, in welcher Reihenfolge Suchmaschinen Inhalte für eine konkrete Suchanfrage ausspielen. Für SEO ist das einer der zentralen Mechanismen überhaupt: Nicht die Existenz einer Seite entscheidet über Sichtbarkeit, sondern ihre relative Eignung im Vergleich zu anderen Dokumenten im Index.

@@ -2,18 +2,8 @@
 title: "Was ist SEO?"
 parent: Foundations
 nav_order: 1
-permalink: /foundations/was-ist-seo/
+layout: chapter
 ---
-
-# Was ist SEO?
-{: .no_toc }
-
-<details open markdown="block">
-<summary>Inhalt</summary>
-{: .text-delta }
-- TOC
-{:toc}
-</details>
 
 ## Ziel des Kapitels
 Dieses Kapitel vermittelt ein grundlegendes Verständnis davon, was Suchmaschinenoptimierung (SEO) ist und welche Rolle sie im modernen digitalen Marketing spielt. Es bildet die fachliche Grundlage für die gesamte Knowledge Base und schafft ein gemeinsames Begriffsverständnis für die nachfolgenden Kapitel.

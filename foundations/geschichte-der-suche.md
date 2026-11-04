@@ -2,18 +2,8 @@
 title: "Geschichte der Suche"
 parent: Foundations
 nav_order: 2
-permalink: /foundations/geschichte-der-suche/
+layout: chapter
 ---
-
-# Geschichte der Suche
-{: .no_toc }
-
-<details open markdown="block">
-<summary>Inhalt</summary>
-{: .text-delta }
-- TOC
-{:toc}
-</details>
 
 ## Ziel des Kapitels
 Die Geschichte der Suche ist gleichzeitig die Geschichte von SEO. Wer versteht, wie sich Suchmaschinen entwickelt haben, versteht auch, warum moderne SEO heute anders funktioniert als noch vor zehn oder zwanzig Jahren.

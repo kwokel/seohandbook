@@ -1,11 +1,8 @@
 ---
 title: Glossar
 nav_order: 12
-permalink: /glossar/
+layout: chapter
 ---
-
-# Glossar
-{: .no_toc }
 
 Zentrale Begriffe des Handbuchs, alphabetisch sortiert.
 

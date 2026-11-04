@@ -2,7 +2,6 @@
 title: Start
 layout: home
 nav_order: 0
-permalink: /
 ---
 
 # SEO Handbook
@@ -11,8 +10,8 @@ permalink: /
 Ein deutschsprachiges Nachschlagewerk für SEO auf Senior-Niveau – zum Lernen und für die tägliche Arbeit.
 {: .fs-6 .fw-300 }
 
-[Mit Foundations starten]({{ '/foundations/' | relative_url }}){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[Zum Glossar]({{ '/glossar/' | relative_url }}){: .btn .fs-5 .mb-4 .mb-md-0 }
+[Mit Foundations starten](foundations/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Zum Glossar](glossar/){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
@@ -32,7 +31,7 @@ Ziel des Kapitels · Grundlagen · Konzepte · Best Practices · Häufige Fehler
 
 | Bereich | Inhalt |
 |:--|:--|
-| [Foundations]({{ '/foundations/' | relative_url }}) | Was SEO ist, wie Suchmaschinen und Ranking-Systeme arbeiten, Search Intent, AI Search und die richtigen KPIs |
-| [Glossar]({{ '/glossar/' | relative_url }}) | Zentrale Begriffe, alphabetisch |
+| [Foundations](foundations/) | Was SEO ist, wie Suchmaschinen und Ranking-Systeme arbeiten, Search Intent, AI Search und die richtigen KPIs |
+| [Glossar](glossar/) | Zentrale Begriffe, alphabetisch |
 
 Weitere Bereiche werden laufend ergänzt.

@@ -2,21 +2,11 @@
 title: "Grundlagen AI Search"
 parent: Foundations
 nav_order: 7
-permalink: /foundations/grundlagen-ai-search/
+layout: chapter
 ---
 
-# Grundlagen AI Search
-{: .no_toc }
-
-<details open markdown="block">
-<summary>Inhalt</summary>
-{: .text-delta }
-- TOC
-{:toc}
-</details>
-
 # Ziel des Kapitels
-Dieses Kapitel erklärt die fundamentalen technologischen und strategischen Paradigmenwechsel, die durch künstliche Intelligenz – insbesondere [Large Language Models (LLMs)]({{ '/glossar/' | relative_url }}#l) – in der Suchmaschinenlandschaft ausgelöst wurden. Ziel ist es, die Mechanik hinter AI-gestützter Suche (wie Google AI Overviews, Perplexity oder Bing Copilot) zu verstehen. Senior SEOs lernen hier, wie sich das klassische [Information Retrieval (IR)]({{ '/glossar/' | relative_url }}#i) zur generativen Antwortsynthese entwickelt und wie die Strategie von reiner Suchmaschinenoptimierung (SEO) in Richtung [Answer Engine Optimization (AEO)]({{ '/glossar/' | relative_url }}#a) erweitert werden muss.
+Dieses Kapitel erklärt die fundamentalen technologischen und strategischen Paradigmenwechsel, die durch künstliche Intelligenz – insbesondere [Large Language Models (LLMs)](../../glossar/#l) – in der Suchmaschinenlandschaft ausgelöst wurden. Ziel ist es, die Mechanik hinter AI-gestützter Suche (wie Google AI Overviews, Perplexity oder Bing Copilot) zu verstehen. Senior SEOs lernen hier, wie sich das klassische [Information Retrieval (IR)](../../glossar/#i) zur generativen Antwortsynthese entwickelt und wie die Strategie von reiner Suchmaschinenoptimierung (SEO) in Richtung [Answer Engine Optimization (AEO)](../../glossar/#a) erweitert werden muss.
 
 # Grundlagen
 Klassische Suchmaschinen fungieren als Bibliothekare: Sie crawlen das Web, indexieren Dokumente und liefern dem Nutzer eine sortierte Liste relevanter Links basierend auf einem Such-Intent. Die kognitive Arbeit – das Lesen, Vergleichen und Extrahieren der finalen Antwort – bleibt beim Nutzer.
@@ -29,7 +19,7 @@ Dieser Wechsel von der **dokumentenbasierten Suche** zur **generativen Antwortsu
 
 ## Konzepte
 ### 1. Retrieval-Augmented Generation (RAG)
-[RAG]({{ '/glossar/' | relative_url }}#r) ist die technologische Brücke zwischen klassischen Suchmaschinen und modernen LLMs. LLMs neigen zum ["Halluzinieren"]({{ '/glossar/' | relative_url }}#h) (Erfinden von Fakten) und haben einen festen Wissensstand (Cut-off-Date). Um dies für die Websuche zu lösen, nutzen AI-Suchmaschinen RAG:
+[RAG](../../glossar/#r) ist die technologische Brücke zwischen klassischen Suchmaschinen und modernen LLMs. LLMs neigen zum ["Halluzinieren"](../../glossar/#h) (Erfinden von Fakten) und haben einen festen Wissensstand (Cut-off-Date). Um dies für die Websuche zu lösen, nutzen AI-Suchmaschinen RAG:
 1. **Retrieval (Abruf):** Der Nutzer stellt eine Frage. Die klassische Suchmaschine sucht in ihrem Index nach den 10-20 relevantesten, aktuellsten Dokumenten.
 2. **Augmentation (Anreicherung):** Der Text dieser Dokumente wird als Kontext an den Prompt für das LLM angehängt.
 3. **Generation (Erzeugung):** Das LLM generiert eine Antwort, die strikt auf diesem bereitgestellten Kontext (dem "Grounding") basiert, und zitiert die Quellen.
@@ -39,7 +29,7 @@ Dieser Wechsel von der **dokumentenbasierten Suche** zur **generativen Antwortsu
 Während SEO auf Klicks und Traffic abzielt, fokussiert sich AEO darauf, als primäre Quelle in synthetisierten KI-Antworten zitiert zu werden (AI Citations). AEO verlangt eine extrem direkte, informationsdichte und strukturierte Aufbereitung von Inhalten. Die Währung ist hier nicht der Link-Klick, sondern der Share of Voice und die Marken-Autorität innerhalb der KI-Antwort.
 
 ### 3. Information Gain (Informationsgewinn)
-LLMs sind hervorragend darin, Konsens-Wissen (Common Knowledge) zusammenzufassen. Wenn ein Artikel nur das wiederholt, was bereits auf 50 anderen Seiten steht, bietet er der AI keinen "[Information Gain]({{ '/glossar/' | relative_url }}#i)". Suchmaschinen priorisieren Inhalte, die neue Fakten, originäre Daten, Expertenzitate oder einzigartige Perspektiven (Experience) liefern, da diese den generierten Antworten einen echten Mehrwert hinzufügen.
+LLMs sind hervorragend darin, Konsens-Wissen (Common Knowledge) zusammenzufassen. Wenn ein Artikel nur das wiederholt, was bereits auf 50 anderen Seiten steht, bietet er der AI keinen "[Information Gain](../../glossar/#i)". Suchmaschinen priorisieren Inhalte, die neue Fakten, originäre Daten, Expertenzitate oder einzigartige Perspektiven (Experience) liefern, da diese den generierten Antworten einen echten Mehrwert hinzufügen.
 
 ### 4. Grounding & Halluzinationen
 "Grounding" bezeichnet die Verankerung von KI-Aussagen in verifizierbaren Fakten aus dem Suchindex. Suchmaschinen haben strenge Filter (Safety & YMYL-Richtlinien), die verhindern sollen, dass die KI bei kritischen Themen (Gesundheit, Finanzen) halluziniert. Daher zitieren sie in AI Overviews bei YMYL-Themen ausschließlich hochgradig verifizierte Entitäten mit extrem starkem E-E-A-T.
@@ -108,6 +98,6 @@ Grundlagen AI Search bedeutet zu verstehen, dass wir uns von der Ära des reinen
 * [**Aleyda Solis**](https://www.aleydasolis.com/en/blog/): Konzepte und Optimierungsstrategien für SGE (Search Generative Experience) und AEO.
 * [**Kevin Indig (Growth Memo)**](https://www.kevin-indig.com/): Analysen zu Information Gain und den Auswirkungen von LLMs auf organischen Traffic.
 * [**Google Search Central - AI Overviews**](https://developers.google.com/search/docs/appearance/ai-overviews): Offizielle Dokumentation zur Funktionsweise und Steuerung von Google AI Inhalten.
-* [Kapitel 01.03 Wie Suchmaschinen funktionieren]({{ '/foundations/wie-suchmaschinen-funktionieren/' | relative_url }})
-* [Kapitel 01.06 Modern Search Ecosystem]({{ '/foundations/modern-search-ecosystem/' | relative_url }})
+* [Kapitel 01.03 Wie Suchmaschinen funktionieren](../wie-suchmaschinen-funktionieren/)
+* [Kapitel 01.06 Modern Search Ecosystem](../modern-search-ecosystem/)
 * Kapitel 04.02 Informationsarchitektur
