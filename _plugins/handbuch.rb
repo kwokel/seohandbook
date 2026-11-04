@@ -21,6 +21,7 @@ Jekyll::Hooks.register :site, :post_read do |site|
       p.data["layout"] = "chapter" if [nil, "default"].include?(p.data["layout"])
       if p.equal?(overview)
         p.data["has_children"] = pages.size > 1
+        p.data["has_toc"]      = false # Kapitelliste kommt aus _layouts/chapter.html
         p.data["nav_order"]    = number.to_i if number
         p.data.delete("parent")
         p.data["permalink"]    = "/#{area}/" unless p.data["permalink"]

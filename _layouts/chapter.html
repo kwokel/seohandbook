@@ -12,6 +12,19 @@ layout: default
 {{ content }}
 </div>
 
+{% if page.uebersicht %}
+  {% assign kapitel = site.html_pages | where: "parent", page.title | sort: "nav_order" %}
+  {% if kapitel.size > 0 %}
+<hr>
+<h2 class="text-delta">Kapitel in diesem Bereich</h2>
+<ul>
+  {% for k in kapitel %}
+  <li><a href="{{ k.url | relative_url }}">{{ k.title }}</a></li>
+  {% endfor %}
+</ul>
+  {% endif %}
+{% endif %}
+
 <script>
   // Inhaltsverzeichnis automatisch aus den Überschriften des Kapitels erzeugen
   (function () {
